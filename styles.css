@@ -94,7 +94,10 @@ header h1 {
     font-family: 'Times New Roman', Times, serif;
     color: rgb(5, 26, 109);
 }
-
+header .container .col-sm-6 a{
+    animation-duration: 3s;
+    animation-name: slidein;
+}
 header a:hover {
     color: #e90606;
     transform: scale(1.15);
@@ -122,6 +125,17 @@ header a:hover {
     transition: all 0.4s;
 }
 
+@keyframes slidein {
+    from {
+        margin-left: 50%;
+        width: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 50%;
+    }
+}
 .first a img:hover {
     transform: scale(1.15);
 }
